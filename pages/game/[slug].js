@@ -8,7 +8,7 @@ export default function Game({ game }) {
     <Layout>
       <Head title={game.name} />
       <h1>{game.name}</h1>
-      <img src={game.image} />
+      <img src={game.image} alt={game.name} />
     </Layout>
   );
 }
