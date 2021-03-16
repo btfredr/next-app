@@ -1,18 +1,19 @@
 import Head from "../components/layout/Head";
 import Layout from "../components/layout/Layout";
 import axios from "axios";
-import { BASE_URL } from "./constants/api";
+import { BASE_URL } from "../constants/api";
 
 export default function Index(props) {
-  // the log here will happen in the browser console
-  console.log(props);
-
   return (
     <Layout>
       <Head title="Next Intro" />
 
       {props.games.map((game) => {
-        return <h3 key={game.slug}>{game.name}</h3>;
+        return (
+          <a key={game.slug} href={`game/${game.slug}`}>
+            {game.name}
+          </a>
+        );
       })}
     </Layout>
   );
