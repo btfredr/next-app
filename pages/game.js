@@ -5,9 +5,9 @@ import Heading from "../components/Heading";
 const about = () => {
   return (
     <>
-      <Head title="About" />
+      <Head title="Games" />
       <Layout />
-      <Heading title="About" />
+      <Heading title="Games" />
     </>
   );
 };

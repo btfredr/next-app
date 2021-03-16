@@ -1,15 +1,13 @@
-import Head from "next/head";
+import Head from "../components/Head";
 import Layout from "../components/Layout";
+import Heading from "../components/Heading";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home | Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <Head title="Home" />
       <Layout />
+      <Heading title="Home" />
     </>
   );
 }
