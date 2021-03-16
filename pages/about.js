@@ -1,15 +1,16 @@
-import Layout from "../components/Layout";
-import Head from "../components/Head";
-import Heading from "../components/Heading";
+import Link from "next/link";
+import Head from "next/head";
 
-const about = () => {
+export default function About() {
   return (
     <>
-      <Head title="About" />
-      <Layout />
-      <Heading title="About" />
+      <Head>
+        <title>About | Create Next App</title>
+      </Head>
+
+      <Link href="/">
+        <a>Home</a>
+      </Link>
     </>
   );
-};
-
-export default about;
+}

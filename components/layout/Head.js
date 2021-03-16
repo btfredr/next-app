@@ -5,9 +5,8 @@ export default function Head({ title = "" }) {
     <NextHead>
       <title>
         {title}
-        {title ? " | " : ""} Next App
+        {title ? " | " : ""}Create Next App
       </title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="icon" href="/favicon.ico" />
     </NextHead>
   );
